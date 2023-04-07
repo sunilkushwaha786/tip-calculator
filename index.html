@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Tip Calculator</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+    <!-- creating main parent div -->
+  <div class="parent">
+    <!-- creating the calculator division -->
+    <div id="mainbox">
+        <!-- heading -->
+      <h1 class="head">Tip Calculator</h1>
+      <!-- made a lebel -->
+      <label for="bill" class="text-size">Enter your bill amount:</label>
+      </br>
+      <!-- create inpt -->
+      <input type="number" id="bill" class="" placeholder="Bill Amount in Rs.">
+      </br></br>
+      <!-- service label -->
+      <label for="service" class="text-size">How was the service?</label>
+      </br>
+      <!-- making section inside service holder and give id -->
+      <select id="service">
+        <option value="0.3">Excellent - 30%</option>
+        <option value="0.2">Good - 20%</option>
+        <option value="0.15">Average - 15%</option>
+        <option value="0.1">Poor - 10%</option>
+        <option value="0.05">Terrible - 5%</option>
+      </select>
+      </br></br>
+      <!-- create input type and placeholder for customer feedback -->
+      <label for="people" class="text-size">Split between how many people?</label></br>
+
+      <input type="number" id="people" placeholder="How many peoples?"></br></br>
+      <!-- here making div for button alin -->
+      <div class="container">
+        <button id="calculate">CALCULATE TIP</button>
+      </div>
+      </br>
+      <!-- here we shown result -->
+      <div id="tip" class="container"></div>
+
+    </div>
+  </div>
+  <script src="/script.js"></script>
+</body>
+
+</html>
